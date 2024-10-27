@@ -6,11 +6,10 @@ body {
 .container {
     display: grid;
     grid-template-areas:
-        "navbar navbar"
-        "main-grid main-grid"
-        "footer footer";
+        "navbar"
+        "main-grid"
+        "footer";
     grid-template-rows: 1fr 9fr 1fr;
-    grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -55,14 +54,11 @@ body {
   }
 
 .main-grid {
-    grid-area: main-grid;
+    /* grid-area: main-grid;
     display: grid;
-    grid-template-areas:
-        "main-grid-left main-grid-right";
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
+    
     position: relative;
-    background: linear-gradient(#f5cfcf, #d2d5f7);
+    background: linear-gradient(#f5cfcf, #d2d5f7); */
 }
 
 .main-grid-left {
@@ -128,4 +124,13 @@ body {
     font-size: 40px;
     color: white;
     padding: 20px 20px;
+}
+
+.construction {
+    display: flex;
+    font-size: 40px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+
 }
