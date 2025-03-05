@@ -34,8 +34,13 @@ body {
   color: #007bff !important;
 }
 
+.navbar-collapse {
+  transition: height 0.3s ease-in-out;
+}
+
 .navbar-toggler {
   border: none;
+  outline: none;
 }
 
 .navbar-toggler:focus {
