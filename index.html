@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,75 +27,102 @@
   </head>
   <body>
     <div class="container">
-      <header class="navbar" id="navbar">
-        <div class="left">BQ</div>
-        <div class="right">
-          <a href="index.html">home</a>
-          <a href="about.html">about</a>
-          <a href="resume.html">resume</a>
-          <a href="contact.html">contact</a>
-          <a href="blog.html">blog</a>
-          <a href="projects.html">projects</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-primary" href="index.html">BQ</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a> -->
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="hamburger-menu-icon">
-          <div class="bar-1"></div>
-          <div class="bar-2"></div>
-          <div class="bar-3"></div>
-        </div>
-      </header>
-      <div class="main-grid" id="main-grid">
-        <div class="main-grid-left" id="face-container">
-          <div class="face-circle">
-            <div class="face">
-              <div class="hair">
-                <div class="hair-left"></div>
-                <div class="hair-right"></div>
-              </div>
-              <div class="eyebrows">
-                <div class="eyebrow"></div>
-                <div class="eyebrow"></div>
-              </div>
-              <div class="eyes">
-                <div class="eye"></div>
-                <div class="eye"></div>
-              </div>
-              <div class="nose"></div>
-              <div class="mouth"></div>
-              <div class="ears">
-                <div class="ear"></div>
-                <div class="ear"></div>
+      </nav>
+
+      <div class="container mt-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="fw-bold text-primary">Hello, I'm Brad Quinton.</h1>
+            <p class="blurb-body-1">
+              I'm a
+              <span class="developer">&lt;software developer&gt;</span> and
+              <span class="integral-symbol"
+                >&#x222B;&#x222B;<span class="math">math(x)dx</span></span
+              >
+              teacher.
+            </p>
+
+            <p>I like to build things for the web and solve problems.</p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <div class="face-circle">
+              <div class="face">
+                <div class="hair">
+                  <div class="hair-left"></div>
+                  <div class="hair-right"></div>
+                </div>
+                <div class="eyebrows">
+                  <div class="eyebrow"></div>
+                  <div class="eyebrow"></div>
+                </div>
+                <div class="eyes">
+                  <div class="eye"></div>
+                  <div class="eye"></div>
+                </div>
+                <div class="nose"></div>
+                <div class="mouth"></div>
+                <div class="ears">
+                  <div class="ear"></div>
+                  <div class="ear"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="main-grid-right" id="blurb">
-          <p class="blurb-name">Hello, I'm Brad Quinton.</p>
-          <p class="blurb-body-1">
-            I'm a <span class="developer">&ltsoftware developer&gt</span> and
-            <span class="integral-symbol"
-              >&#x222B;&#x222B;<span class="math">math(x)dx</span></span
-            >
-            teacher.
-          </p>
-          <p class="blurb-body-2">
-            I like to build things for the web and solve problems.
-          </p>
-          <p class="blurb-body-3">Welcome to my website.</p>
-        </div>
       </div>
-      <footer class="footer" id="footer">
-        <a href="https://www.linkedin.com/in/brad-quinton-976b28206/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/quintobl"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="mailto:bradley.l.quinton@gmail.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-        <a href="https://www.youtube.com/user/bquinton1015"
-          ><i class="fa-brands fa-youtube"></i
-        ></a>
+
+      <footer class="text-center py-3">
+        <div class="container">
+          <p class="mb-2 connect">Connect with me</p>
+          <a
+            href="https://www.linkedin.com/in/brad-quinton-976b28206/"
+            class="mx-2"
+            ><i class="fa-brands fa-linkedin fa-2x text-primary"></i
+          ></a>
+          <a href="https://github.com/quintobl" class="mx-2"
+            ><i class="fa-brands fa-github fa-2x text-dark"></i
+          ></a>
+          <a href="mailto:bradley.l.quinton@gmail.com" class="mx-2"
+            ><i class="fa-solid fa-envelope fa-2x text-secondary"></i
+          ></a>
+          <a href="https://www.youtube.com/user/bquinton1015" class="mx-2"
+            ><i class="fa-brands fa-youtube fa-2x text-danger"></i
+          ></a>
+        </div>
       </footer>
     </div>
   </body>

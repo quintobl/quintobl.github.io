@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="about.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,89 +27,112 @@
   </head>
   <body>
     <div class="container">
-      <header class="navbar" id="navbar">
-        <div class="left">BQ</div>
-        <div class="right">
-          <a href="index.html">home</a>
-          <a href="about.html">about</a>
-          <a href="resume.html">resume</a>
-          <a href="contact.html">contact</a>
-          <a href="blog.html">blog</a>
-          <a href="projects.html">projects</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-primary" href="index.html">BQ</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a> -->
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="hamburger-menu-icon">
-          <div class="bar-1"></div>
-          <div class="bar-2"></div>
-          <div class="bar-3"></div>
-        </div>
-      </header>
-      <div class="main-grid" id="main-grid">
-        <div class="main-grid-left" id="about-me-text">
-          <h2>About Me</h2>
-          <p>
-            Hello! I'm glad you stopped by my personal website. Here's a bit
-            about my journey and what drives me.
-          </p>
-          <p>
-            I grew up and went to college in Indiana, earning a bachelor's
-            degree with a major in philosophy and a minor in mathematics. My
-            early career began as an adjunct instructor at Ivy Tech Community
-            College, where I taught basic mathematics and algebra. However, a
-            passion for music led me to Austin, Texas. There, I wrote and
-            performed my own songs, and I had the opportunity to score
-            commercials, documentaries, and theater productions. It was also in
-            Austin where I met my wonderful wife.
-          </p>
-          <p>
-            Our next adventure brought us to Cincinnati, OH. Here, I decided to
-            go back to school at Cincinnati State and the University of
-            Cincinnati, aiming to deepen my expertise in mathematics. During
-            this time, I enrolled in a Python course and discovered my love for
-            programming. This newfound passion guided me to Tech Elevator, where
-            I earned a certificate in software development, setting me firmly on
-            my current path.
-          </p>
-          <p>
-            Today, I am a full-stack software developer at a healthcare SaaS
-            company based in Cincinnati. My work allows me to blend creativity
-            with technical skills, solving complex problems and building
-            innovative solutions. Alongside my professional career, I continue
-            to teach mathematics part-time, helping students prepare for the
-            ACT, SAT, and tutoring in subjects like algebra, trigonometry, and
-            calculus.
-          </p>
-          <p>
-            I live in Cincinnati with my wife and our beautiful daughter,
-            enjoying every moment with them while pursuing my dual passions for
-            software development and teaching. Thank you for visiting my site,
-            and I look forward to connecting with you!
-          </p>
-        </div>
-        <div class="main-grid-right">
-          <div class="background-img-1"></div>
-          <img
-            src="images/img-brad-about.jpg"
-            class="img-brad"
-            alt="image-brad"
-          />
-          <div class="background-img-2"></div>
-          <div class="background-img-3"></div>
-          <div class="background-img-4"></div>
+      </nav>
+
+      <div class="container mt-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start px-4">
+            <h2 class="fw-bold text-primary">About Me</h2>
+            <p>
+              Hello! I'm glad you stopped by my personal website. Here's a bit
+              about my journey and what drives me.
+            </p>
+            <p>
+              I grew up and went to college in Indiana, earning a bachelor's
+              degree with a major in philosophy and a minor in mathematics. My
+              early career began as an adjunct instructor at Ivy Tech Community
+              College, where I taught basic mathematics and algebra. However, a
+              passion for music led me to Austin, Texas. There, I wrote and
+              performed my own songs, and I had the opportunity to score
+              commercials, documentaries, and theater productions. It was also
+              in Austin where I met my wonderful wife.
+            </p>
+            <p>
+              Our next adventure brought us to Cincinnati, OH. Here, I decided
+              to go back to school at Cincinnati State and the University of
+              Cincinnati, aiming to deepen my expertise in mathematics for a
+              possible teaching career. During this time, I enrolled in a Python
+              course and discovered my love for programming. This newfound
+              passion guided me to Tech Elevator, where I earned a certificate
+              in software development, setting me firmly on my current path.
+            </p>
+            <p>
+              Today, I am a full-stack software developer. My work allows me to
+              blend creativity with technical skills, solving complex problems
+              and building innovative solutions. Alongside my professional
+              career, I continue to teach mathematics part-time, helping
+              students prepare for the ACT, SAT, and tutoring in subjects like
+              algebra, trigonometry, and calculus.
+            </p>
+            <p>
+              I live in Cincinnati with my wife and our beautiful daughter,
+              enjoying every moment with them while pursuing my dual passions
+              for software development and teaching. Thank you for visiting my
+              site, and I look forward to connecting with you!
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <img
+              src="images/img-brad-about.jpg"
+              class="img-fluid img-brad rounded shadow-lg"
+              alt="image-brad"
+            />
+          </div>
         </div>
       </div>
-      <footer class="footer" id="footer">
-        <a href="https://www.linkedin.com/in/brad-quinton-976b28206/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/quintobl"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="mailto:bradley.l.quinton@gmail.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-        <a href="https://www.youtube.com/user/bquinton1015"
-          ><i class="fa-brands fa-youtube"></i
-        ></a>
+
+      <footer class="text-center py-3">
+        <div class="container">
+          <p class="mb-2 connect">Connect with me</p>
+          <a
+            href="https://www.linkedin.com/in/brad-quinton-976b28206/"
+            class="mx-2"
+            ><i class="fa-brands fa-linkedin fa-2x text-primary"></i
+          ></a>
+          <a href="https://github.com/quintobl" class="mx-2"
+            ><i class="fa-brands fa-github fa-2x text-dark"></i
+          ></a>
+          <a href="mailto:bradley.l.quinton@gmail.com" class="mx-2"
+            ><i class="fa-solid fa-envelope fa-2x text-secondary"></i
+          ></a>
+          <a href="https://www.youtube.com/user/bquinton1015" class="mx-2"
+            ><i class="fa-brands fa-youtube fa-2x text-danger"></i
+          ></a>
+        </div>
       </footer>
     </div>
   </body>

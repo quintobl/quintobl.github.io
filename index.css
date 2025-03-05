@@ -1,77 +1,58 @@
 body {
-    font-family: "Source Code Pro", sans-serif;
-    margin: 0 auto;
+  font-family: "Source Code Pro", sans-serif;
+  background-color: #dee2e6; /* Light gray */
+  color: #343a40; /* Dark gray */
 }
 
+/* Custom container adjustments */
 .container {
-    display: grid;
-    grid-template-areas:
-        "navbar navbar"
-        "main-grid main-grid"
-        "footer footer";
-    grid-template-rows: 1fr 9fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    overflow-x: hidden;
+  max-width: 1200px; /* Limits width for better readability */
+  margin: 0 auto; /* Centers content */
+  padding: 20px; /* Adds spacing around content */
+  background-color: #dee2e6;
 }
 
+
+/* Navbar Styling */
 .navbar {
-  grid-area: navbar;
+  background-color: #dee2e6 !important; /* White navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navbar Brand (BQ Logo or Name) */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff !important; /* Light blue */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: #343a40 !important; /* Dark gray */
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff !important; /* Light blue on hover */
+}
+
+/* Navbar Toggler (Hamburger Menu on Mobile) */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.face-container {
   display: flex;
-  background-color: black;
-  justify-content: space-between;
+  justify-content: flex-end; /* Moves face towards the right */
   align-items: center;
-  position: relative;
-}
-
-.navbar .left {
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    margin-left: 20px;
-    padding: 8px;
-    border: 4px solid #880808;
-    border-radius: 50%;
-  }
-
-.navbar .right {
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    padding-right: 100px;
-}
-
-.navbar .right a {
-    color: white;
-    text-decoration: none;
-}
-
-.navbar .right a:hover {
-    text-decoration: underline;
-  }
-
-.main-grid {
-    grid-area: main-grid;
-    display: grid;
-    grid-template-areas:
-        "face-container blurb";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    position: relative;
-    background: linear-gradient(#f5cfcf, #d2d5f7);
-}
-
-#face-container {
-  grid-area: face-container;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
 }
 
 .face-circle {
@@ -84,6 +65,7 @@ body {
   border: 2px solid #880808;
   padding-top: 10px;
   border-style: dotted;
+  margin-right: 20px;
 }
 
 .face {
@@ -231,14 +213,9 @@ body {
 }
 
 .footer {
-  grid-area: footer;
-  background-color: black;
-  color: white;
+  background-color:#dee2e6;
   text-align: center;
-  width: 100vw;
-  bottom: 0;
-  align-items: center;
-  justify-content: space-evenly;
+  padding: 20px 0;
 }
 
 .main-grid-right .blurb-name {
@@ -247,29 +224,18 @@ body {
     margin-bottom: -10px;
 }
 
-.developer {
-    font-size: 20px;
-    color: #880808;
-}
-
+.developer,
+.integral-symbol,
 .math {
-    font-size: 20px;
-    color: #880808;
+  font-size: 17px; /* Ensure both texts are the same size */
+  font-family: "Source Code Pro", "Cambria Math", "Times New Roman", serif;
+  font-weight: bold;
+  color: #007bff; /* Light blue */
 }
 
-.integral-symbol {
-    font-size: 40px;
-    color: #880808;
+.blurb-body-1 {
+  font-family: "Source Code Pro", "Cambria Math", "Times New Roman", serif;
 }
-
-/* .circle {
-    border: 1px solid black;
-    width: 300px;
-    height: 300px;
-    background-color: none;
-    border-radius: 50%;
-    padding: 10px;
-} */
 
 .fa-brands {
     font-size: 40px;
@@ -281,4 +247,8 @@ body {
     font-size: 40px;
     color: white;
     padding: 20px 20px;
+}
+
+.connect {
+  font-size: 20px;
 }

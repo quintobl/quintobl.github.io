@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="resume.css" />
+    <link rel="stylesheet" href="index.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,84 +23,180 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Resume</title>
+    <title>Resume - Brad Quinton</title>
   </head>
   <body>
     <div class="container">
-      <header class="navbar" id="navbar">
-        <div class="left">BQ</div>
-        <div class="right">
-          <a href="index.html">home</a>
-          <a href="about.html">about</a>
-          <a href="resume.html">resume</a>
-          <a href="contact.html">contact</a>
-          <a href="blog.html">blog</a>
-          <a href="projects.html">projects</a>
-        </div>
-        <div class="hamburger-menu-icon">
-          <div class="bar-1"></div>
-          <div class="bar-2"></div>
-          <div class="bar-3"></div>
-        </div>
-      </header>
-      <div class="construction">Under Construction</div>
-      <!-- <div class="main-grid" id="main-grid">
-        <div class="main-grid-left" id="name-education-skills">
-          <div class="name">
-            <h2>Brad Quinton</h2>
-            <p>Full-Stack Software Developer</p>
-            <p>
-              <span><i class="fa-solid fa-envelope"></i></span>New Email Address
-            </p>
-            <p>
-              <span><i class="fa-solid fa-location-dot"></i></span>Cincinnati,
-              OH
-            </p>
-            <p>
-              <span><i class="fa-solid fa-globe"></i></span>This Website Link
-            </p>
-            <p>
-              <span><i class="fa-brands fa-linkedin"></i></span>LinkedIn
-            </p>
-            <p>
-              <span><i class="fa-brands fa-github"></i></span>Github
-            </p>
-          </div>
-          <div class="education">
-            <h2>Education</h2>
-            <p>University of Cincinnati</p>
-            <p>Cincinnati State Technical and Community College</p>
-          </div>
-          <div class="skills">
-            <h2>Skills</h2>
-            <p>HTML</p>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-primary" href="index.html">BQ</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a> -->
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="main-grid-right">
-          <div class="objective">
-            <p>Objective</p>
+      </nav>
+
+      <div class="container mt-5">
+        <header class="text-center mb-4">
+          <h1 class="fw-bold text-primary">Bradley Quinton</h1>
+          <p class="text-muted">Software Engineer</p>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/brad-quinton-976b28206/"
+              class="mx-2"
+              ><i class="fa-brands fa-linkedin fa-2x text-primary"></i
+            ></a>
+            <a href="https://github.com/quintobl" class="mx-2"
+              ><i class="fa-brands fa-github fa-2x text-dark"></i
+            ></a>
+            <a href="mailto:bradley.l.quinton@gmail.com" class="mx-2"
+              ><i class="fa-solid fa-envelope fa-2x text-secondary"></i
+            ></a>
           </div>
-          <div class="job-1">
-            <p>Job</p>
+        </header>
+
+        <section>
+          <h2 class="fw-bold">Technical Skills</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Backend</h5>
+              <ul>
+                <li>C#</li>
+                <li>.NET Core 5-8</li>
+              </ul>
+              <h5>Frontend</h5>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Angular 13-17</li>
+                <li>RxJS</li>
+              </ul>
+              <h5>Database</h5>
+              <ul>
+                <li>SQL</li>
+                <li>MS SQL Server</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h5>Testing</h5>
+              <ul>
+                <li>Unit Testing (MS Test, xUnit, Jest)</li>
+                <li>Integration Testing</li>
+              </ul>
+              <h5>Source Control</h5>
+              <ul>
+                <li>Git</li>
+                <li>Azure DevOps</li>
+              </ul>
+              <h5>Development Methodologies</h5>
+              <ul>
+                <li>Agile</li>
+                <li>SAFe</li>
+              </ul>
+            </div>
           </div>
-          <div class="job-2">
-            <p>Job</p>
-          </div>
+        </section>
+
+        <section>
+          <h2 class="fw-bold">Professional Experience</h2>
+          <h5>Software Developer - AssureCare LLC, Cincinnati, OH</h5>
+          <p class="text-muted-date"><em>Dec 2021 - Oct 2024</em></p>
+          <ul class="pe-list">
+            <li>Developed and maintained a multi-module healthcare web application using .NET, C#, Angular, TypeScript, HTML/CSS, SQL, and RxJS, supporting users across the healthcare industry, including doctors, pharmacists, insurance companies, and patients.</li>
+            <li>Self-taught Angular, TypeScript, and RxJS via Pluralsight and Udemy courses to be able to develop the web application.</li>
+            <li>Developed and optimized xUnit and Jest unit tests to improve code reliability and ensure feature accuracy, reducing bugs and enhancing application stability.</li>
+            <li>Consistently rated "Exceeds Expectations" in all performance reviews, reflecting a strong commitment to high-quality work, meeting project goals, and exceeding team standards.</li>
+            <li>Collaborated with cross-functional teams, including BAs, POs, QAs, and other developers, to solve complex technical issues, identify edge cases, contribute to the overall solution design, and refine and point tickets in Azure DevOps during backlog refinement meetings.</li>
+            <li>Delivered product demos at the end of each iteration, showcasing completed features and updates.</li>
+            <li>Created and refined detailed technical documentation for all development work, significantly improving team efficiency and enabling developers to troubleshoot and implement features more effectively.</li>
+          </ul>
+
+          <h5>Teacher (part-time) - Huntington Learning Center, Cincinnati, OH</h5>
+          <p class="text-muted-date"><em>Nov 2019 - Present</em></p>
+          <ul class="pe-list">
+            <li>Tutor the math portion of the SAT and ACT to high school students, as well as high school math courses such as algebra, trigonometry, geometry, and calculus.</li>
+          </ul>
+
+          <h5>Paralegal - Texas Department of Licensing & Regulation, Austin, TX</h5>
+          <p class="text-muted-date"><em>Dec 2014 - Aug 2017</em></p>
+          <ul class="pe-list">
+            <li>Performed data analysis on 1,000 - 1,500 customer complaints per year to determine if any violations of rules or laws had occurred.</li>
+            <li>Assessed whether complaints required further investigation and, if necessary, gathered evidence and ensured the case file was complete before forwarding it to an investigator for further review.</li>
+            <li>Coordinated with multiple teams to help reduce complaint backlog and increase department-wide productivity.</li>
+            <li>Communicated with consumers and licensees via phone, and personally-drafted mail correspondence.</li>
+          </ul>
+
+          <h5>Paralegal - Lawyer's Aid Service, Austin, TX</h5>
+          <p class="text-muted-date"><em>Feb 2007 - Dec 2014</em></p>
+          <ul class="pe-list">
+            <li>Performed extensive trial preparation, sat 2nd-Chair to lead attorney in court, and secured judgments for 20-30 cases per year.</li>
+            <li>Reviewed, drafted, and edited court pleadings and settlement documentation, often under strict time constraints.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="fw-bold">Education</h2>
+          <h5>Tech Elevator - Cincinnati, OH</h5>
+          <p class="text-muted-date"><em>Sept 2021 - Dec 2021</em></p>
+          <p>Graduated from a 14-week coding boot camp, completing multiple projects in .NET/C#.</p>
+
+          <h5>Cincinnati State Technical & Community College - Cincinnati, OH</h5>
+          <p class="text-muted-date"><em>Aug 2017 - Aug 2021</em></p>
+          <p>Software engineering coursework in Python, Java, SQL, HTML/CSS/JavaScript.</p>
+
+          <h5>DePauw University - Greencastle, IN</h5>
+          <p class="text-muted-date"><em>Aug 1999 - May 2003</em></p>
+          <p>Bachelor of Arts in Philosophy and Mathematics.</p>
+        </section>
+      </div>
+
+      <footer class="text-center py-3">
+        <div class="container">
+          <p class="mb-2 connect">Connect with me</p>
+          <a
+            href="https://www.linkedin.com/in/brad-quinton-976b28206/"
+            class="mx-2"
+            ><i class="fa-brands fa-linkedin fa-2x text-primary"></i
+          ></a>
+          <a href="https://github.com/quintobl" class="mx-2"
+            ><i class="fa-brands fa-github fa-2x text-dark"></i
+          ></a>
+          <a href="mailto:bradley.l.quinton@gmail.com" class="mx-2"
+            ><i class="fa-solid fa-envelope fa-2x text-secondary"></i
+          ></a>
+          <a href="https://www.youtube.com/user/bquinton1015" class="mx-2"
+            ><i class="fa-brands fa-youtube fa-2x text-danger"></i
+          ></a>
         </div>
-      </div> -->
-      <footer class="footer" id="footer">
-        <a href="https://www.linkedin.com/in/brad-quinton-976b28206/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/quintobl"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="mailto:bradley.l.quinton@gmail.com"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
-        <a href="https://www.youtube.com/user/bquinton1015"
-          ><i class="fa-brands fa-youtube"></i
-        ></a>
       </footer>
     </div>
   </body>
