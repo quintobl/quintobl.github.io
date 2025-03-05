@@ -1,45 +1,39 @@
-/* General Styling */
 body {
   font-family: "Source Code Pro", sans-serif;
-  background-color: #dee2e6; /* Light gray background */
-  color: #343a40; /* Dark gray text */
+  background-color: #dee2e6;
+  color: #343a40;
 }
 
-/* Custom container adjustments */
 .container {
-  max-width: 1200px; /* Limits width for better readability */
-  margin: 0 auto; /* Centers content */
-  padding: 20px; /* Adds spacing around content */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #dee2e6;
 }
 
-/* Navbar */
 .navbar {
   background-color: #dee2e6 !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar Brand (BQ Logo or Name) */
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #007bff !important; /* Light blue */
+  color: #007bff !important;
 }
 
-/* Navbar Links */
 .navbar-nav .nav-link {
   font-size: 1.2rem;
-  color: #343a40 !important; /* Dark gray */
+  color: #343a40 !important;
   font-weight: 500;
   padding: 10px 15px;
   transition: all 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #007bff !important; /* Light blue on hover */
+  color: #007bff !important;
 }
 
-/* Navbar Toggler (Hamburger Menu on Mobile) */
 .navbar-toggler {
   border: none;
 }
@@ -49,7 +43,6 @@ body {
   box-shadow: none;
 }
 
-/* About Me Section */
 h2 {
   font-size: 32px;
   font-weight: bold;
@@ -58,13 +51,12 @@ h2 {
 }
 
 .img-brad {
-  width: 80%; /* Responsive width */
-  max-width: 350px; /* Prevents it from being too large */
+  width: 80%;
+  max-width: 350px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
 .footer {
   background-color: #dee2e6;
   text-align: center;
